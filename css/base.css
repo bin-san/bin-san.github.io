@@ -1,0 +1,21 @@
+@font-face {
+    font-family: samarkan;
+    src: url("/fonts/samarkan.ttf");
+}
+
+@font-face {
+    font-family: momstypewriter;
+    src: url('/fonts/momstypewriter.ttf');
+}
+
+#flowable-container {
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    font-family: samarkan;
+    font-weight: bolder;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
