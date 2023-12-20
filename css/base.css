@@ -8,12 +8,12 @@
     src: url('/fonts/momstypewriter.ttf');
 }
 
-:root {
-    --old-paper-bg: url('/images/old-paper.jpg')
-}
 
-:root {
-    --card-bg: url('/images/card-old-paper.jpeg')
+
+body {
+    background-image: url('/images/old-paper.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 #flowable-container {
@@ -47,7 +47,7 @@ div.card {
     border: 0px solid black;
     border-radius: 8px;
     box-shadow: 5px 5px 20px rgb(34, 34, 34);
-    background-image: var(--card-bg);
+    background-image: url('/images/card-old-paper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
