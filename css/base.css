@@ -31,6 +31,18 @@ body {
     flex-wrap: wrap;
 }
 
+.card-container-container-heading{
+    font-family: momstypewriter;
+    border-bottom:2px solid black;
+    padding-bottom:8px;
+}
+
+.segment {
+    display: flex;
+    justify-content:center;
+    padding:10px
+}
+
 div.card-container {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +56,6 @@ div.card-container {
 
 div.card {
     width: 150px;
-    text-align: justify;
     font-family: momstypewriter;
     font-size: 14px;
     background-color: white;
@@ -56,11 +67,17 @@ div.card {
     background-repeat: no-repeat;
     background-size: cover;
     flex-grow: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+div.card:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
     div.card {
-        text-align: justify;
+        cursor: pointer;
         font-family: momstypewriter;
         font-size: 14px;
         background-color: white;
@@ -78,6 +95,8 @@ div.card {
 div.card div.card-heading {
     font-weight: bolder;
     text-align: start;
+    border-bottom: 2px solid black; 
+    padding-bottom:8px;
 }
 
 .mass-underline {
