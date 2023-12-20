@@ -12,8 +12,12 @@
 
 body {
     background-image: url('/images/old-paper.jpg');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
 }
 
 #flowable-container {
@@ -27,18 +31,19 @@ body {
     flex-wrap: wrap;
 }
 
-div.card-container{
+div.card-container {
     display: flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     row-gap: 60px;
     column-gap: 30px;
     padding-top: 20px;
 }
 
+
 div.card {
-    width: 200px;
+    width: 150px;
     text-align: justify;
     font-family: momstypewriter;
     font-size: 14px;
@@ -50,13 +55,31 @@ div.card {
     background-image: url('/images/card-old-paper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-grow: 1;
 }
 
-div.card div.card-heading{
+@media screen and (max-aspect-ratio: 1/1) {
+    div.card {
+        text-align: justify;
+        font-family: momstypewriter;
+        font-size: 14px;
+        background-color: white;
+        padding: 20px;
+        border: 0px solid black;
+        border-radius: 8px;
+        box-shadow: 5px 5px 20px rgb(34, 34, 34);
+        background-image: url('/images/card-old-paper.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+    }
+}
+
+div.card div.card-heading {
     font-weight: bolder;
 }
 
-.mass-underline{
+.mass-underline {
     border-bottom: 2px solid black;
     padding-bottom: 1px;
 }
@@ -66,5 +89,3 @@ div.card div.card-heading{
     text-align: center;
     color: red;
 }
-
-
