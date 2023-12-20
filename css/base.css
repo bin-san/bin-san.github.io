@@ -34,11 +34,11 @@ div.card-container{
     justify-content:space-evenly;
     row-gap: 60px;
     column-gap: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 div.card {
-    width: 150px;
+    width: 200px;
     text-align: justify;
     font-family: momstypewriter;
     font-size: 14px;
@@ -52,9 +52,19 @@ div.card {
     background-size: cover;
 }
 
+div.card div.card-heading{
+    font-weight: bolder;
+}
+
 .mass-underline{
     border-bottom: 2px solid black;
     padding-bottom: 1px;
+}
+
+.stamp {
+    border: 2px solid red;
+    text-align: center;
+    color: red;
 }
 
 
